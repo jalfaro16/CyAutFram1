@@ -1,0 +1,24 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --reporter mochawesome --spec 'cypress/e2e/MyTests/Test8.cy.js'",
+    "headTest": "npx cypress run --reporter mochawesome --spec 'cypress/e2e/MyTests/Test8.cy.js' --headed",
+    "chromeTest":"npx cypress run --reporter mochawesome --spec 'cypress/e2e/MyTests/Test8.cy.js' --headed --browser chrome",
+    "parallel":"npx cypress run --reporter mochawesome --headed --parallel --browser chrome",
+    "Suite1":"npx cypress run --reporter mochawesome --spec \"cypress//e2e//MyTests/*\"",
+    "Suite2":"npx cypress run --reporter mochawesome --spec \"cypress//e2e//MyTests2/*\"",
+    "Suite3":"npx cypress run --reporter mochawesome --spec \"cypress//e2e//MyTests3/*\""
+  },
+  "author": "Jason A",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.1.0",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
