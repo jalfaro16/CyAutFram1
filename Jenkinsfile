@@ -20,7 +20,7 @@ pipeline {
 
         stage('Run Cypress Tests') {
             steps {
-                sh 'npx cypress run --reporter mochawesome'
+                sh 'npm run Suite1'
             }
         }
 
